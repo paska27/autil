@@ -2,13 +2,17 @@
   "name": "autil",
   "version": "0.0.0",
   "description": "A utility",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "build": "babel src --out-dir lib",
     "flow": "flow"
   },
   "author": "Sergey Poskachey",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
     "flow-bin": "^0.54.1"
   }
 }
