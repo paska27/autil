@@ -4,8 +4,11 @@
   "description": "A utility",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "flow": "flow"
   },
   "author": "Sergey Poskachey",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "flow-bin": "^0.54.1"
+  }
 }
