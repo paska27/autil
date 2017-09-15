@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src --out-dir lib",
-    "flow": "flow"
+    "flow": "flow",
+    "prepublish": "npm run build"
   },
   "author": "Sergey Poskachey",
   "license": "ISC",
