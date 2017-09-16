@@ -1,3 +1,3 @@
 /* @flow */
 
-export { default as urlBuild } from './urlBuild';
+export { default as urlBuild } from './uriBuild';

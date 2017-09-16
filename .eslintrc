@@ -1,0 +1,34 @@
+{
+  "extends":[
+    "airbnb",
+    "plugin:flowtype/recommended"
+  ],
+
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest/globals": true
+  },
+
+  "plugins": [
+    "flowtype",
+    "jest"
+  ],
+
+  "rules": {
+    "max-len": ["error", {"code": 120, "ignoreComments": true}],
+    "one-var": "off",
+    "object-curly-spacing": "off",
+    "curly": ["off"],
+    "prefer-template": "off",
+
+    "import/prefer-default-export": "off",
+
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/valid-expect": "error",
+
+    "jsx-a11y/href-no-hash": "off"
+  }
+}
