@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# run lint, flow and test if js file changes are to be committed
+if git diff-index --name-only HEAD | grep -Eq "\.js$"
+then
+  echo "=== Running pre-commit lint..."
+  npm run lint
+
+  echo "=== Running pre-commit flow..."
+  npm run flow
+
+  echo "=== Running pre-commit test..."
+  npm run test
+fi
